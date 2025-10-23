@@ -121,3 +121,12 @@ jobs:
           with:
               name: tetra_demodulator_win_pdb
               path: build/RelWithDebInfo/tetra_demodulator.pdb
+        - name: Upload plugin DLL
+        uses: actions/upload-artifact@v3
+        with:
+        name: tetra_demodulator_win
+        path: |
+        build/Release/tetra_demodulator.dll
+        build/bin/tetra_demodulator.dll
+        **/tetra_demodulator.dll
+
